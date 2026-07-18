@@ -1,0 +1,40 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+myenv/
+venv/
+env/
+
+# Environment variables
+.env
+
+# IDE files
+.vscode/
+.idea/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# SQLite database
+chatbot.db
+
+# User uploaded PDFs
+uploads/
+
+# FAISS vector stores
+vectorstore/
+
+# Temporary files
+temp/
+
+# Streamlit cache
+.streamlit/
