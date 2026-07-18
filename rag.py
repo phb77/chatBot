@@ -1,12 +1,13 @@
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_cohere import CohereEmbeddings
 from langchain_community.vectorstores import FAISS
 import os
 
+api_key = os.getenv("COHERE_API_KEY")
 
-embedding = HuggingFaceEmbeddings(
-    model_name="sentence-transformers/all-mpnet-base-v2"
+embeddings = CohereEmbeddings(
+    cohere_api_key=api_key, model="embed-v4.0"
 )
 
 
