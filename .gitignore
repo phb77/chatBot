@@ -27,6 +27,12 @@ Thumbs.db
 # SQLite database
 chatbot.db
 
+# SQLite files
+*.db
+*.db-shm
+*.db-wal
+*.sqlite3
+
 # User uploaded PDFs
 uploads/
 
