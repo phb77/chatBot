@@ -101,7 +101,7 @@ def create_vectorstore(
         # Create FAISS
         db = FAISS.from_documents(
             chunks,
-            embedding
+            embeddings
         )
 
 
@@ -154,7 +154,7 @@ def get_retriever(user_id, thread_id):
             thread_id
         ),
 
-        embedding,
+        embeddings,
 
         allow_dangerous_deserialization=True
 

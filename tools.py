@@ -9,7 +9,6 @@ from dotenv import load_dotenv
 from rag import get_retriever, vectorstore_exists
 from langchain_core.runnables import RunnableConfig
 from langsmith import traceable
-from langchain_community.utilities import SerpAPIWrapper
 import os
  
 load_dotenv()
